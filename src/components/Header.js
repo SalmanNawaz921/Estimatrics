@@ -14,7 +14,7 @@ export default function Header() {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-gold-500 font-serif hover:text-gold-400 transition-colors">
-           <Image src="/logo.png" alt="Logo" width={300} height={50} />
+           <Image src="/logo.png" alt="Logo" width={200} height={50} />
           </Link>
           
           <nav className="hidden md:flex items-center space-x-8">
