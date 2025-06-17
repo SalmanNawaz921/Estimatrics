@@ -118,8 +118,17 @@ export default function Header() {
                 </button>
               </Drawer.Trigger>
               <Drawer.Portal>
-                <Drawer.Overlay className="fixed inset-0 bg-black/40 z-50" />
-                <Drawer.Content className="bg-dark-900 flex flex-col rounded-t-[10px] h-[96%] mt-24 fixed bottom-0 left-0 right-0 z-50">
+                <Drawer.Overlay
+                  className="fixed inset-0 bg-black/40 z-50"
+                  style={{
+                    transform: "translateZ(0)",
+                    willChange: "opacity",
+                  }}
+                />
+                <Drawer.Content
+                  className="bg-dark-900 flex flex-col rounded-t-[10px] h-[96%] mt-24 fixed bottom-0 left-0 right-0 z-50"
+                  style={{ willChange: "transform" }}
+                >
                   {/* Visually hidden title for accessibility */}
                   <VisuallyHidden>
                     <Drawer.Title>Navigation Menu</Drawer.Title>
