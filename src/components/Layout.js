@@ -1,5 +1,5 @@
-import Header from './Header'
-import Footer from './Footer'
+import Header from "./Header";
+import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
@@ -8,5 +8,5 @@ export default function Layout({ children }) {
       <main className="flex-grow">{children}</main>
       <Footer />
     </div>
-  )
+  );
 }
