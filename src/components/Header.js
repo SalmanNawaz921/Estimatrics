@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { textVariant } from "@/utils/motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Drawer } from "vaul";
 import DropdownMenu from "@/components/DropdownMenu";
@@ -70,6 +70,19 @@ const VisuallyHidden = ({ children }) => {
 };
 
 export default function Header() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  useEffect(() => {
+    if (isDrawerOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isDrawerOpen]);
+
   return (
     <motion.header
       initial="hidden"
@@ -107,7 +120,11 @@ export default function Header() {
             </Link>
 
             {/* Mobile menu button - Using Vaul's Drawer */}
-            <Drawer.Root shouldScaleBackground>
+            <Drawer.Root
+              shouldScaleBackground
+              open={isDrawerOpen}
+              onOpenChange={setIsDrawerOpen}
+            >
               <Drawer.Trigger asChild>
                 <button
                   type="button"
