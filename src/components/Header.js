@@ -111,10 +111,10 @@ export default function Header() {
               <Drawer.Trigger asChild>
                 <button
                   type="button"
-                  className="lg:hidden text-white focus:outline-none"
+                  className="lg:hidden text-[#DBC981] focus:outline-none cursor-pointer"
                 >
                   <span className="sr-only">Open menu</span>
-                  <FiMenu size={24} />
+                  <FiMenu size={24} className="text-[#DBC981]" />
                 </button>
               </Drawer.Trigger>
               <Drawer.Portal>
@@ -134,7 +134,7 @@ export default function Header() {
                         onClick={() => Drawer.close()}
                       >
                         <Image
-                          src="/logo.png"
+                          src="/images/logo_header.png"
                           alt="Logo"
                           width={160}
                           height={40}
@@ -142,7 +142,7 @@ export default function Header() {
                         />
                       </Link>
                       <Drawer.Close className="p-1 rounded-md text-white hover:bg-gray-800">
-                        <FiX size={24} className="text-gold-500" />
+                        <FiX size={24} className="text-[#DBC981]" />
                       </Drawer.Close>
                     </div>
 
