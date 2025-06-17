@@ -4,6 +4,7 @@ import TradeCategory from "@/components/trades/TradeCategory";
 import { motion } from "framer-motion";
 import { staggerContainer, textVariant } from "@/utils/motion";
 import CTA from "@/components/CTA";
+import OtherHero from "@/components/OtherHero";
 
 export default function ConstructionTrades() {
   const tradeCategories = [
@@ -103,10 +104,8 @@ export default function ConstructionTrades() {
 
   return (
     <Layout>
-      <motion.section
-     
-        className="py-20 bg-white"
-      >
+      <OtherHero />
+      <motion.section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <motion.div variants={textVariant(0.2)} className="text-center mb-16">
             <h1 className="text-3xl md:text-4xl font-bold text-dark-900 mb-4 font-serif">

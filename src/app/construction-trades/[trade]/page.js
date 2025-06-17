@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import Layout from "@/components/Layout";
 import TradeDetail from "@/components/trades/TradeDetail";
 import CTA from "@/components/CTA";
+import OtherHero from "@/components/OtherHero";
 
 function formatSlug(slug) {
   return slug
@@ -47,6 +48,7 @@ export default function TradePage() {
 
   return (
     <Layout>
+      <OtherHero/>
       <div className="container mx-auto px-6 py-20">
         <TradeDetail trade={trade} />
       </div>

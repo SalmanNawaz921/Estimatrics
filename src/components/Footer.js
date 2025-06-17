@@ -1,3 +1,4 @@
+"use client"
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
 import Link from "next/link";
@@ -50,7 +51,12 @@ export default function Footer() {
               href="/"
               className="text-2xl font-bold text-gold-500 font-serif hover:text-gold-400 transition-colors"
             >
-              <Image src="/logo.png" alt="Logo" width={200} height={50} />
+              <Image
+                src="/images/logo_header.png"
+                alt="Logo"
+                width={250}
+                height={50}
+              />
             </Link>
             <p className="text-gray-400 mt-4 mb-6">
               Professional construction estimation services with unmatched
