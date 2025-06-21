@@ -12,7 +12,13 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.png" type="image/x-icon" />
       </head>
-      <body>{children}</body>
+      <body
+        style={{
+          overflowX: "hidden",
+        }}
+      >
+        {children}
+      </body>
     </html>
   );
 }

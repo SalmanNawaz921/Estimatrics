@@ -5,10 +5,19 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100vw;
+}
+
 body {
   color: #171717; /* Equivalent to text-dark-900 */
   font-family: "Inter", sans-serif; /* Equivalent to font-sans with Inter */
-  width: 100%;
   height: 100%;
 }
 

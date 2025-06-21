@@ -9,11 +9,6 @@ import OtherHero from "@/components/OtherHero";
 export default function About() {
   const stats = [
     {
-      value: "20+",
-      label: "Years in Business",
-      icon: <FiAward className="w-6 h-6" />,
-    },
-    {
       value: "500+",
       label: "Projects Completed",
       icon: <FiCheckCircle className="w-6 h-6" />,
@@ -81,10 +76,6 @@ export default function About() {
                     alt="Our team at work"
                     className="w-full h-auto object-cover"
                   />
-                  <div className="absolute -bottom-6 -right-6 bg-gold-500 text-dark-900 p-4 rounded-lg shadow-lg">
-                    <span className="block text-2xl font-bold">Since 2003</span>
-                    <span className="text-sm">Trusted in the industry</span>
-                  </div>
                 </div>
               </motion.div>
 
@@ -122,7 +113,7 @@ export default function About() {
             {/* Stats */}
             <motion.div
               variants={staggerContainer()}
-              className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20"
+              className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-20"
             >
               {stats.map((stat, index) => (
                 <motion.div

@@ -29,7 +29,7 @@ const OtherHero = () => {
             className="text-xl text-gray-300 max-w-3xl mx-auto"
           >
             Estimatrics has been the trusted partner for construction
-            professionals seeking precise, reliable cost estimates since 2003.
+            professionals seeking precise, reliable cost estimates.
           </motion.p>
         </div>
       </div>
